@@ -2,17 +2,17 @@ header, main {scroll-behavior: smooth;}
 /* header */
 header {
     text-align: center;
-    margin:0 auto;
-    position: fixed; background: #fff;
+    margin:0 auto; padding: 0;
+    position: fixed; top: 0; background: #fff;
     width: 100%;
     
 }
 header nav {
-    padding: 30px 0;
-    border-bottom: 2px solid black;
+    padding: 15px 0;
+    border-bottom: 5px solid black;
 }
 header nav a {
-    margin-left: 30px; font-size: 1.777em; font-weight: 600;
+    margin-left: 30px; font-size: 1.333em; font-weight: 600;
 }
 header nav a:hover {
     color: black; filter:drop-shadow(5px 5px 1px #999)
@@ -20,35 +20,46 @@ header nav a:hover {
 /* main */
 main {padding: 0 30px;}
 /* main -> intro */
-main #intro {text-align: center; height: 100vh; }
+main #intro {text-align: center; height: 100vh; background: #EEEDED; }
 main #intro h1 {
-padding-top:320px ;
+    padding-top:320px ;
+    animation: moves 1s ease-in;
+}
+@keyframes moves {
+    0%{transform: translateX(-1500px);}
+    50%{transform: translateX(1000px);}
 }
 main #intro h1 img {}
 main #intro p {margin-top: 40px;}
 /* main.end */
 /* main profile */
+main #profile h2 {font-weight: 600;}
 main #profile {
     text-align: center;
-    width: 100%; height: 100vh;
-    display: flex; justify-content: space-between;
+    width: 100%;
 }
 main #profile h1 {
     font-size: 2.369em; font-weight: 700;
-    border-bottom: 2px solid black;
-    margin: 50px;
+    border-bottom: 2px solid black; padding:80px 0 30px 117px;
+    background-color: #F0DE36; text-align: left;
+}
+main #profile .contents {
+    display: flex;
 }
 main #profile .left {
     display: flex; flex-flow: column nowrap;
 }
-main #profile .left p {}
-main #profile .left p img {display: block;}
+main #profile .left > p {margin: 50px;}
+main #profile .left p img {}
 /* profile -> porfile */
 main #profile .left .profile {
-    width: 40%;
+    width: 40%; margin-left: 100px;
 }
 main #profile .left .profile p {}
 main #profile .left .profile p img {}
+main #profile .left .profile h2 {
+    padding: 30px 0; 
+}
 main #profile .left .profile dl {
     display: flex; width: 330px; justify-content: space-between;
     
@@ -62,9 +73,9 @@ main #profile .right .career {}
 main #profile .right .career h2 {
     border-bottom: 1px solid black;
 }
-main #profile .right .career dl {display: flex; }
-main #profile .right .career dl dt {margin-right: 30px; line-height: 30px;}
-main #profile .right .career dl dt dd {}
+main #profile .right .career dl { display: flex; padding-top: 10px;}
+main #profile .right .career dl dt {margin-right: 30px; line-height: 30px; font-weight: 600;}
+main #profile .right .career dl dt dd {line-height: 30px;}
 /* profile -> 스킬 툴 */
 main #profile .right .skils {
     display: flex;
@@ -72,7 +83,7 @@ main #profile .right .skils {
 }
 main #profile .right h2{
     border-bottom: 1px solid black;
-    margin-top: 150px; padding-bottom: 30px;
+    margin-top: 100px; padding-bottom: 30px;
 }
 main #profile .right .skils ul {
     margin-left: 30px; 
@@ -83,4 +94,37 @@ main #profile .right .skils ul .percent {
     border: 1px solid #999; border-radius: 10px;
     
 }
+main #profile .right .skils ul .percent span {
+    background: burlywood; display: block;
+    border-radius: 10px; animation: gage 1s linear ;
+    text-align: left;
+}
+@keyframes gage {
+    0%{transform: scaleX(0);}
+    100%{transform: scaleX(30px);}
+}
 main #profile .right .skils ul li img {}
+main #project {
+    background: coral;
+}
+main #design {
+    background: orange;
+}
+main #design .etc_design{}
+main #design .etc_design .sns_design{height: 100%;}
+    main #design .etc_design .sns_design a{
+        width: 20%; border: 1px solid black;
+        display: inline-block; height: 300px;
+        border-radius: 20px;
+    }
+    main #design .etc_design .sns_design a img{}
+main #design .etc_design .bn_design{ 
+    width: 100%; height: 100%;}
+main #design .etc_design .promotion_design{
+    width: 100%; height: 100%;}
+main #design .etc_design .cardnews_design{ 
+    width: 100%; height: 100%;}
+
+/* #design .swiper {}
+#design .swiper .swiper-wrapper {}
+#design .swiper .swiper-wrapper .wiper-slide {} */
