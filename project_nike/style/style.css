@@ -1,0 +1,32 @@
+header {margin: 0 auto;}
+header .top{
+    display: flex; justify-content: space-between;
+    background: #999;
+}
+header .other_brands {}
+header .other_brands a{width: 24px; height: 24px;}
+header .other_brands a img{}
+header .h_center {text-align: center;}
+header .h_center p {}
+header .h_center p a {}
+header .h_right {}
+header .h_right a {}
+header .bottom {
+    white-space: nowrap; display: flex; justify-content: space-between;
+}
+header .bottom a {}
+header .bottom a img {}
+header .bottom nav{}
+header .bottom nav .main_menu{
+    background: pink; display: flex;
+}
+header .bottom nav .main_menu li{}
+header .bottom nav .main_menu li a{background: yellow;}
+header .bottom nav .main_menu li .sub_menu{
+    display: flex; background: #999; height: 500px;
+}
+header .bottom nav .main_menu li .sub_menu li {}
+header .bottom nav .main_menu li .sub_menu li a {background: skyblue;}
+header .bottom nav .main_menu li .sub_menu li .sub_contents{}
+header .bottom nav .main_menu li .sub_menu li .sub_contents li {}
+header .bottom nav .main_menu li .sub_menu li .sub_contents li a {background: purple;}
