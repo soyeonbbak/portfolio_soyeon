@@ -4,7 +4,7 @@ header {
     text-align: center;
     margin:0 auto; padding: 0;
     position: fixed; top: 0; background: #fff;
-    width: 100%;
+    width: 100%; z-index: 1;
     
 }
 header nav {
@@ -104,26 +104,37 @@ main #profile .right .skils ul .percent span {
     100%{transform: scaleX(30px);}
 }
 main #profile .right .skils ul li img {}
-main #project {
-    background: coral;
+main #project {}
+main #project h1 {
+    font-size: 2.369em; font-weight: 700;
+    border-bottom: 2px solid black; padding:80px 0 30px 117px;
 }
+main #project .project_list{text-align: center;}
+main #project .project_list a {
+    width: 180vh; border: 1px solid black;
+    display: block; height: 400px;
+    border-radius: 20px; margin: 15px;
+}
+main #project .project_list a img {}
 main #design {
     background: orange;
 }
 main #design .etc_design{}
-main #design .etc_design .sns_design{height: 100%;}
+main #design .etc_design h1 {
+    font-size: 2.369em; font-weight: 700;
+}
+main #design .etc_design .sns_design{
+    height: 100%; text-align: center; 
+}
     main #design .etc_design .sns_design a{
-        width: 20%; border: 1px solid black;
-        display: inline-block; height: 300px;
-        border-radius: 20px;
+        width: 350px; border: 1px solid black;
+        display: inline-block; height: 350px;
+        border-radius: 20px; margin: 15px;
     }
     main #design .etc_design .sns_design a img{}
-main #design .etc_design .bn_design{ 
-    width: 100%; height: 100%;}
-main #design .etc_design .promotion_design{
-    width: 100%; height: 100%;}
-main #design .etc_design .cardnews_design{ 
-    width: 100%; height: 100%;}
+main #design .etc_design .bn_design{}
+main #design .etc_design .promotion_design{}
+main #design .etc_design .cardnews_design{}
 
 /* #design .swiper {}
 #design .swiper .swiper-wrapper {}
